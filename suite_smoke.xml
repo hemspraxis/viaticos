@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test All Smoke" parallel="false">
+	<listeners>
+	   <listener class-name="org.uncommons.reportng.HTMLReporter" />
+	</listeners>
+	
+	<!-- <test name="SIMPLE_SMOKE_OPENING">
+		<classes>
+			<class name="com.praxis.bisnet.test.smoke.SimpleSmokeTest" />
+		</classes>
+	</test> -->
+	
+	<test name="SOLICITAR_VIAJE_SENCILLO_SMOKE">
+		<classes>
+			<class name="com.praxis.bisnet.test.smoke.ViajesEmpleadoSmokeTest">
+				<methods>
+					<include name="signOn" />
+					<include name="casoAgregarViajeSencillo" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<!-- <test name="AUTORIZAR_VIAJE_SENCILLO_SMOKE">
+		<classes>
+			<class name="com.praxis.bisnet.test.smoke.ViajesAdminCCSmokeTest">
+				<methods>
+					<include name="signOn" />
+					<include name="casoAutorizarViaje" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="COTIZAR_VIAJE_SENCILLO_SMOKE">
+		<classes>
+			<class name="com.praxis.bisnet.test.smoke.ViajesAdminViaSmokeTest">
+				<methods>
+					<include name="signOn" />
+					<include name="casoCotizarViaje" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="AUTORIZAR_COTIZACION_VIAJE_SENCILLO_SMOKE">
+		<classes>
+			<class name="com.praxis.bisnet.test.smoke.ViajesAdminCCSmokeTest">
+				<methods>
+					<include name="signOn" />
+					<include name="casoAutorizarCotizacionViaje" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="PAGAR_ADELANTO_VIAJE_SENCILLO_SMOKE">
+		<classes>
+			<class name="com.praxis.bisnet.test.smoke.EstadoCuentaSmokeTest">
+				<methods>
+					<include name="signOn" />
+					<include name="casoPagarAdelanto" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="AGREGAR_COMPROBACION_VIAJE_SENCILLO_SMOKE">
+		<classes>
+			<class name="com.praxis.bisnet.test.smoke.ComprobacionesEmpleadoSmokeTest">
+				<methods>
+					<include name="signOn" />
+					<include name="casoAgregarComprobacion" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="APROBAR_COMPROBACION_VIAJE_SENCILLO_SMOKE">
+		<classes>
+			<class name="com.praxis.bisnet.test.smoke.ComprobacionesAdminViaSmokeTest">
+				<methods>
+					<include name="signOn" />
+					<include name="casoAprobarComprobacion" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="AJUSTAR_PAGO_VIAJE_SENCILLO_SMOKE">
+		<classes>
+			<class name="com.praxis.bisnet.test.smoke.EstadoCuentaEmpleadoSmokeTest">
+				<methods>
+					<include name="signOn" />
+					<include name="casoAjustarPago" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="LIQUIDAR_VIAJE_SENCILLO_SMOKE">
+		<classes>
+			<class name="com.praxis.bisnet.test.smoke.EstadoCuentaSmokeTest">
+				<methods>
+					<include name="signOn" />
+					<include name="casoLiquidarSolicitud" />
+				</methods>
+			</class>
+		</classes>
+	</test> -->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- <test name="SOLICITAR_VIAJE_REDONDO_SMOKE">
+		<classes>
+			<class name="com.praxis.bisnet.test.smoke.ViajesEmpleadoSmokeTest">
+				<methods>
+					<include name="signOn" />
+					<include name="casoAgregarViajeRedondo" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="AUTORIZAR_VIAJE_REDONDO_SMOKE">
+		<classes>
+			<class name="com.praxis.bisnet.test.smoke.ViajesAdminCCSmokeTest">
+				<methods>
+					<include name="signOn" />
+					<include name="casoAutorizarViaje" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="COTIZAR_VIAJE_REDONDO_SMOKE">
+		<classes>
+			<class name="com.praxis.bisnet.test.smoke.ViajesAdminViaSmokeTest">
+				<methods>
+					<include name="signOn" />
+					<include name="casoCotizarViaje" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="AUTORIZAR_COTIZACION_VIAJE_REDONDO_SMOKE">
+		<classes>
+			<class name="com.praxis.bisnet.test.smoke.ViajesAdminCCSmokeTest">
+				<methods>
+					<include name="signOn" />
+					<include name="casoAutorizarCotizacionViaje" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="PAGAR_ADELANTO_VIAJE_REDONDO_SMOKE">
+		<classes>
+			<class name="com.praxis.bisnet.test.smoke.EstadoCuentaSmokeTest">
+				<methods>
+					<include name="signOn" />
+					<include name="casoPagarAdelanto" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="AGREGAR_COMPROBACION_VIAJE_REDONDO_SMOKE">
+		<classes>
+			<class name="com.praxis.bisnet.test.smoke.ComprobacionesEmpleadoSmokeTest">
+				<methods>
+					<include name="signOn" />
+					<include name="casoAgregarComprobacion" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="APROBAR_COMPROBACION_VIAJE_REDONDO_SMOKE">
+		<classes>
+			<class name="com.praxis.bisnet.test.smoke.ComprobacionesAdminViaSmokeTest">
+				<methods>
+					<include name="signOn" />
+					<include name="casoAprobarComprobacion" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="AJUSTAR_PAGO_VIAJE_REDONDO_SMOKE">
+		<classes>
+			<class name="com.praxis.bisnet.test.smoke.EstadoCuentaEmpleadoSmokeTest">
+				<methods>
+					<include name="signOn" />
+					<include name="casoAjustarPago" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="LIQUIDAR_VIAJE_REDONDO_SMOKE">
+		<classes>
+			<class name="com.praxis.bisnet.test.smoke.EstadoCuentaSmokeTest">
+				<methods>
+					<include name="signOn" />
+					<include name="casoLiquidarSolicitud" />
+				</methods>
+			</class>
+		</classes>
+	</test> -->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- <test name="SOLICITAR_VIAJE_MULTIDESTINO_SMOKE">
+		<classes>
+			<class name="com.praxis.bisnet.test.smoke.ViajesEmpleadoSmokeTest">
+				<methods>
+					<include name="signOn" />
+					<include name="casoAgregarViajeMultiDestino" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="AUTORIZAR_VIAJE_MULTIDESTINO_SMOKE">
+		<classes>
+			<class name="com.praxis.bisnet.test.smoke.ViajesAdminCCSmokeTest">
+				<methods>
+					<include name="signOn" />
+					<include name="casoAutorizarViaje" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="COTIZAR_VIAJE_MULTIDESTINO_SMOKE">
+		<classes>
+			<class name="com.praxis.bisnet.test.smoke.ViajesAdminViaSmokeTest">
+				<methods>
+					<include name="signOn" />
+					<include name="casoCotizarViaje" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="AUTORIZAR_COTIZACION_VIAJE_MULTIDESTINO_SMOKE">
+		<classes>
+			<class name="com.praxis.bisnet.test.smoke.ViajesAdminCCSmokeTest">
+				<methods>
+					<include name="signOn" />
+					<include name="casoAutorizarCotizacionViaje" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="PAGAR_ADELANTO_VIAJE_MULTIDESTINO_SMOKE">
+		<classes>
+			<class name="com.praxis.bisnet.test.smoke.EstadoCuentaSmokeTest">
+				<methods>
+					<include name="signOn" />
+					<include name="casoPagarAdelanto" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="AGREGAR_COMPROBACION_VIAJE_MULTIDESTINO_SMOKE">
+		<classes>
+			<class name="com.praxis.bisnet.test.smoke.ComprobacionesEmpleadoSmokeTest">
+				<methods>
+					<include name="signOn" />
+					<include name="casoAgregarComprobacion" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="APROBAR_COMPROBACION_VIAJE_MULTIDESTINO_SMOKE">
+		<classes>
+			<class name="com.praxis.bisnet.test.smoke.ComprobacionesAdminViaSmokeTest">
+				<methods>
+					<include name="signOn" />
+					<include name="casoAprobarComprobacion" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="AJUSTAR_PAGO_VIAJE_MULTIDESTINO_SMOKE">
+		<classes>
+			<class name="com.praxis.bisnet.test.smoke.EstadoCuentaEmpleadoSmokeTest">
+				<methods>
+					<include name="signOn" />
+					<include name="casoAjustarPago" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="LIQUIDAR_VIAJE_MULTIDESTINO_SMOKE">
+		<classes>
+			<class name="com.praxis.bisnet.test.smoke.EstadoCuentaSmokeTest">
+				<methods>
+					<include name="signOn" />
+					<include name="casoLiquidarSolicitud" />
+				</methods>
+			</class>
+		</classes>
+	</test> -->
+	
+</suite>

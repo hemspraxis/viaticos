@@ -22,7 +22,7 @@
 		</classes>
 	</test>
 	
-	<!-- <test name="AUTORIZAR_VIAJE_SENCILLO_SMOKE">
+	<test name="AUTORIZAR_VIAJE_SENCILLO_SMOKE">
 		<classes>
 			<class name="com.praxis.bisnet.test.smoke.ViajesAdminCCSmokeTest">
 				<methods>
@@ -108,7 +108,7 @@
 				</methods>
 			</class>
 		</classes>
-	</test> -->
+	</test>
 	
 	
 	

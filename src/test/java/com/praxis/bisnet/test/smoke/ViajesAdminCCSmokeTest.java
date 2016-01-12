@@ -24,7 +24,6 @@ public class ViajesAdminCCSmokeTest extends WebDriverSetup {
 		System.out.println("before method signon");
 		MainPage mainPage = logInPage.signon(credential, password);
 		Assert.assertNotNull(mainPage);
-        System.out.println("----------------SIGN ON COMPLETE---------------------");  
 	}
 	
 	@Test(enabled = true, priority = 2, groups = {SMOKE, VIAJES})

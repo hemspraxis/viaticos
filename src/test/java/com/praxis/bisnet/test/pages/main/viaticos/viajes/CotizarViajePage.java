@@ -102,7 +102,7 @@ public class CotizarViajePage extends Page<CotizarViajePage> {
 			safeClick(folioClm);
 			Thread.sleep(2000);
 			safeClick(folioClm);
-			Thread.sleep(2000);
+			Thread.sleep(3500);
 			safeClick(folioRow);
 			waitForWebElementDisplayed(cotizarBtn);
 			safeClick(cotizarBtn);

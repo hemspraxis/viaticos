@@ -23,8 +23,7 @@ public class ComprobacionesAdminViaSmokeTest extends WebDriverSetup  {
 		Assert.assertNotNull(logInPage);
 		System.out.println("before method signon");
 		MainPage mainPage = logInPage.signon(credential, password);
-		Assert.assertNotNull(mainPage);
-        System.out.println("----------------SIGN ON COMPLETE---------------------");  
+		Assert.assertNotNull(mainPage); 
 	}
 	
 	@Test(enabled = true, priority = 2, groups = {SMOKE, COMPROBACIONES})

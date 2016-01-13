@@ -104,8 +104,8 @@ public class MisComprobacionesPage extends Page<MisComprobacionesPage> {
 				driver.findElement(By.xpath("//*[@id=\"formConceptos:j_idt344_input\"]")).sendKeys("/home/praxis/Escritorio/comprobantePrueba.jpg");
 				Thread.sleep(1000);
 				safeClick(subirBtn);
-				setDateOnPicker(fechaEventoCalendarStarter, uiDatepickerDiv, "1", "10", "2016");
-				setDateOnPicker(fechaEmisionCalendarStarter, uiDatepickerDiv, "1", "10", "2016");
+				setDateOnPicker(fechaEventoCalendarStarter, uiDatepickerDiv, "1", "1", "2016");
+				setDateOnPicker(fechaEmisionCalendarStarter, uiDatepickerDiv, "1", "1", "2016");
 				safeSendKeys(txtFolioFactura, String.valueOf(7777777 + i));
 				selectValueOnPrimefacesListInLoop(monedaLstLabel, monedaLstPanel, 5);
 				safeSendKeys(txtTipoCambio, "17");

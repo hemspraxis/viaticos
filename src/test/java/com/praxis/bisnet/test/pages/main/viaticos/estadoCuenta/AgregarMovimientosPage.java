@@ -104,6 +104,7 @@ public class AgregarMovimientosPage extends Page<AgregarMovimientosPage> {
 			safeClick(folioRow);
 			waitForWebElementDisplayed(nuevoMovimientoBtn);
 			safeClick(nuevoMovimientoBtn);
+			waitForWebElementDisplayed(fechaMovimientoCalendarStarter);
 			setDateOnPicker(fechaMovimientoCalendarStarter, uiDatepickerDiv, "2", "2", "2016");
 			selectValueOnPrimefacesListInLoop(tipoLstLabel, tipoLstPanel, 1);
 			selectValueOnPrimefacesListInLoop(formaPagoLstLabel, formaPagoLstPanel, generateRandomNumberFromAToZ(1, 4));

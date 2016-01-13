@@ -238,7 +238,7 @@ public class AgregarMovimientosPage extends Page<AgregarMovimientosPage> {
 				safeSendKeys(txtBanco, "ban");
 		        safeClick(navigateForWebElement(bancoCompleteList, "ul:0", ("li:" + generateRandomNumberFromAToZ(0, 9))));
 				safeSendKeys(txtReferencia, "876543210");
-				safeSendKeys(txtSwift, "3333");
+				//safeSendKeys(txtSwift, "3333");
 				
 				safeSendKeys(txtMonto, monto);
 		    	

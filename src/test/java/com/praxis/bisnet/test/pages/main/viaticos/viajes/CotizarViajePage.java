@@ -129,7 +129,7 @@ public class CotizarViajePage extends Page<CotizarViajePage> {
 				}
 				safeClick(eventosBtn);
 				safeSendKeys(txtMonto, "125");
-				safeClick(tarjetaCorporativaBtn);
+				//safeClick(tarjetaCorporativaBtn);
 				safeSendKeys(txtObservaciones, "PRUEBAS COTIZACION");
 				safeClick(guardarDetalleBtn);
 			}

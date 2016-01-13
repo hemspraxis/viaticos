@@ -1,7 +1,7 @@
 package com.praxis.bisnet.test.smoke;
 
-import static com.praxis.bisnet.test.common.constants.GroupsConstants.COMPROBACIONES;
 import static com.praxis.bisnet.test.common.constants.GroupsConstants.SIGNON_ADMINVIA;
+import static com.praxis.bisnet.test.common.constants.GroupsConstants.COMPROBACIONES;
 import static com.praxis.bisnet.test.common.constants.GroupsConstants.SMOKE;
 
 import org.testng.Assert;

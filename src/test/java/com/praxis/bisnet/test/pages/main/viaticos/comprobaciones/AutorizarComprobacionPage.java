@@ -54,15 +54,20 @@ public class AutorizarComprobacionPage extends Page<AutorizarComprobacionPage> {
     
     @FindBy(how = How.ID, using = "messages_container")
     private WebElement messageResponse;
+    
+    @FindBy(how = How.XPATH, using = "//*[@id=\"j_idt20\"]")
+    private WebElement lbEspera;
 	
 	public String autorizarComprobacion() {
 		String responseMessage = null;
 		try {
 			waitForWebElementDisplayed(folioColumn);
 			safeClick(folioColumn);
-			Thread.sleep(12000);
+			Thread.sleep(1000);
+			waitForWebElementNotDisplayed(lbEspera);
 			safeClick(folioColumn);
-			Thread.sleep(12000);
+			Thread.sleep(1000);
+			waitForWebElementNotDisplayed(lbEspera);
 			safeClick(folioRow);
 			for (int i = 1; i <= 3; i++) {
 				waitForWebElementDisplayed(tBody);

@@ -94,15 +94,20 @@ public class CotizarViajePage extends Page<CotizarViajePage> {
     
     @FindBy(how = How.ID, using = "formCotizacion:dcHotel")
     private WebElement txtHotel;
+    
+    @FindBy(how = How.XPATH, using = "//*[@id=\"j_idt20\"]")
+    private WebElement lbEspera;
 	
 	public String cotizacion() {
 		String responseMessage = null;
 		try {
 			waitForWebElementDisplayed(folioClm);
 			safeClick(folioClm);
-			Thread.sleep(12000);
+			Thread.sleep(1000);
+			waitForWebElementNotDisplayed(lbEspera);
 			safeClick(folioClm);
-			Thread.sleep(12000);
+			Thread.sleep(1000);
+			waitForWebElementNotDisplayed(lbEspera);
 			safeClick(folioRow);
 			waitForWebElementDisplayed(cotizarBtn);
 			safeClick(cotizarBtn);

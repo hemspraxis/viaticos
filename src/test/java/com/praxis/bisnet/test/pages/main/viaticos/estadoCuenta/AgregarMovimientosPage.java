@@ -96,6 +96,8 @@ public class AgregarMovimientosPage extends Page<AgregarMovimientosPage> {
     @FindBy(how = How.ID, using = "formMovimiento:messages_container")
     private WebElement messageResponse;
     
+    @FindBy(how = How.XPATH, using = "//*[@id=\"j_idt20\"]")
+    private WebElement lbEspera;
    
 	public String agregarMovimientos() {
 		String responseMessage = null;
@@ -211,9 +213,11 @@ public class AgregarMovimientosPage extends Page<AgregarMovimientosPage> {
 		try {
 			waitForWebElementDisplayed(folioClmEmpleado);
 			safeClick(folioClmEmpleado);
-			Thread.sleep(12000);
+			Thread.sleep(1000);
+			waitForWebElementNotDisplayed(lbEspera);
 			safeClick(folioClmEmpleado);
-			Thread.sleep(12000);
+			Thread.sleep(1000);
+			waitForWebElementNotDisplayed(lbEspera);
 			safeClick(folioRowEmpleado);
 			waitForWebElementDisplayed(saldoLbl);
 			

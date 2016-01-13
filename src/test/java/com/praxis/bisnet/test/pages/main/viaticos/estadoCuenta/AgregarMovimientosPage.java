@@ -111,7 +111,7 @@ public class AgregarMovimientosPage extends Page<AgregarMovimientosPage> {
 			safeSendKeys(txtBanco, "ban");
 	        safeClick(navigateForWebElement(bancoCompleteList, "ul:0", ("li:" + generateRandomNumberFromAToZ(0, 9))));
 			safeSendKeys(txtReferencia, "87654321");
-			safeSendKeys(txtSwift, "5555");
+			//safeSendKeys(txtSwift, "5555");
 			
 			int inicio = montoAutorizadoLbl.getText().indexOf("$");
 	    	int fin = montoAutorizadoLbl.getText().indexOf(",", inicio + 1);

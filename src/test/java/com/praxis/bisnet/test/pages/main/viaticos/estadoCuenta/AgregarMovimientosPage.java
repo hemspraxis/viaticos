@@ -84,7 +84,7 @@ public class AgregarMovimientosPage extends Page<AgregarMovimientosPage> {
     @FindBy(how = How.ID, using = "formMovimiento:j_idt210")
     private WebElement saldoLbl;
     
-    @FindBy(how = How.XPATH, using = "//*[@id=\"formMovimiento:j_idt255\"]/div[1]/button[1]")
+    @FindBy(how = How.XPATH, using = "//*[@id=\"formMovimiento:j_idt258\"]/div[1]/button[1]")
 	private WebElement subirBtn;
     
     @FindBy(how = How.ID, using = "formMovimiento:j_idt59")
@@ -174,7 +174,7 @@ public class AgregarMovimientosPage extends Page<AgregarMovimientosPage> {
 			safeSendKeys(txtMonto, monto);
 	    	
 			safeSendKeys(txtObservaciones, "PRUEBA RECUPERACION DE VIATICOS");
-			driver.findElement(By.xpath("//*[@id=\"formMovimiento:j_idt255_input\"]")).sendKeys("/home/praxis/Escritorio/comprobantePrueba.jpg");
+			driver.findElement(By.xpath("//*[@id=\"formMovimiento:j_idt258_input\"]")).sendKeys("/home/praxis/Escritorio/comprobantePrueba.jpg");
 			Thread.sleep(1000);
 			safeClick(subirBtn);
 			safeClick(guardarBtn);
@@ -243,7 +243,7 @@ public class AgregarMovimientosPage extends Page<AgregarMovimientosPage> {
 				safeSendKeys(txtMonto, monto);
 		    	
 				safeSendKeys(txtObservaciones, "PRUEBA REEMBOLSO DE VIATICOS");
-				driver.findElement(By.xpath("//*[@id=\"formMovimiento:j_idt255_input\"]")).sendKeys("/home/praxis/Escritorio/comprobantePrueba.jpg");
+				driver.findElement(By.xpath("//*[@id=\"formMovimiento:j_idt258_input\"]")).sendKeys("/home/praxis/Escritorio/comprobantePrueba.jpg");
 				Thread.sleep(1000);
 				safeClick(subirBtn);
 				safeClick(guardarBtn);

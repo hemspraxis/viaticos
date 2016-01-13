@@ -114,7 +114,7 @@ public class AgregarMovimientosPage extends Page<AgregarMovimientosPage> {
 			//safeSendKeys(txtSwift, "5555");
 			
 			int inicio = montoAutorizadoLbl.getText().indexOf("$");
-	    	int fin = montoAutorizadoLbl.getText().indexOf(",", inicio + 1);
+	    	int fin = montoAutorizadoLbl.getText().indexOf(".", inicio + 1);
 	    	String numero = montoAutorizadoLbl.getText().substring(inicio + 1, fin);
 	    	
 	    	String cadena = numero;
@@ -158,10 +158,10 @@ public class AgregarMovimientosPage extends Page<AgregarMovimientosPage> {
 			safeSendKeys(txtBanco, "ban");
 	        safeClick(navigateForWebElement(bancoCompleteList, "ul:0", ("li:" + generateRandomNumberFromAToZ(0, 9))));
 			safeSendKeys(txtReferencia, "876543210");
-			safeSendKeys(txtSwift, "4444");
+			//safeSendKeys(txtSwift, "4444");
 			
 			int inicio = saldoLbl.getText().indexOf("$");
-	    	int fin = saldoLbl.getText().indexOf(",", inicio + 1);
+	    	int fin = saldoLbl.getText().indexOf(".", inicio + 1);
 	    	String numero = saldoLbl.getText().substring(inicio + 1, fin);
 	    	
 	    	String cadena = numero;
@@ -181,7 +181,7 @@ public class AgregarMovimientosPage extends Page<AgregarMovimientosPage> {
 			Thread.sleep(2000);
 			
 			int inicio2 = saldoLbl.getText().indexOf("$");
-	    	int fin2 = saldoLbl.getText().indexOf(",", inicio2 + 1);
+	    	int fin2 = saldoLbl.getText().indexOf(".", inicio2 + 1);
 	    	String numero2 = saldoLbl.getText().substring(inicio2 + 1, fin2);
 	    	
 	    	String cadena2 = numero2;
@@ -217,7 +217,7 @@ public class AgregarMovimientosPage extends Page<AgregarMovimientosPage> {
 			waitForWebElementDisplayed(saldoLbl);
 			
 			int inicio = saldoLbl.getText().indexOf("$");
-	    	int fin = saldoLbl.getText().indexOf(",", inicio + 1);
+	    	int fin = saldoLbl.getText().indexOf(".", inicio + 1);
 	    	String numero = saldoLbl.getText().substring(inicio + 1, fin);
 	    	
 	    	String cadena = numero;

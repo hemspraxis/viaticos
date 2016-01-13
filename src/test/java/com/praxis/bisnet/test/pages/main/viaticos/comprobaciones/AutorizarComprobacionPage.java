@@ -60,9 +60,9 @@ public class AutorizarComprobacionPage extends Page<AutorizarComprobacionPage> {
 		try {
 			waitForWebElementDisplayed(folioColumn);
 			safeClick(folioColumn);
-			Thread.sleep(10000);
+			Thread.sleep(12000);
 			safeClick(folioColumn);
-			Thread.sleep(10000);
+			Thread.sleep(12000);
 			safeClick(folioRow);
 			for (int i = 1; i <= 3; i++) {
 				waitForWebElementDisplayed(tBody);

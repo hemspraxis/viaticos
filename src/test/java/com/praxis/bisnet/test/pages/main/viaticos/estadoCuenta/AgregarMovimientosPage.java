@@ -210,9 +210,9 @@ public class AgregarMovimientosPage extends Page<AgregarMovimientosPage> {
 		try {
 			waitForWebElementDisplayed(folioClmEmpleado);
 			safeClick(folioClmEmpleado);
-			Thread.sleep(10000);
+			Thread.sleep(12000);
 			safeClick(folioClmEmpleado);
-			Thread.sleep(10000);
+			Thread.sleep(12000);
 			safeClick(folioRowEmpleado);
 			waitForWebElementDisplayed(saldoLbl);
 			

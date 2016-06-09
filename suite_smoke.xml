@@ -22,7 +22,7 @@
 		</classes>
 	</test>
 	
-	<test name="AUTORIZAR_VIAJE_SENCILLO_SMOKE">
+	<!-- <test name="AUTORIZAR_VIAJE_SENCILLO_SMOKE">
 		<classes>
 			<class name="com.praxis.bisnet.test.smoke.ViajesAdminCCSmokeTest">
 				<methods>
@@ -31,9 +31,9 @@
 				</methods>
 			</class>
 		</classes>
-	</test>
+	</test> -->
 	
-	<test name="COTIZAR_VIAJE_SENCILLO_SMOKE">
+	<!-- <test name="COTIZAR_VIAJE_SENCILLO_SMOKE">
 		<classes>
 			<class name="com.praxis.bisnet.test.smoke.ViajesAdminViaSmokeTest">
 				<methods>
@@ -108,7 +108,7 @@
 				</methods>
 			</class>
 		</classes>
-	</test>
+	</test> -->
 	
 	
 	
@@ -119,7 +119,7 @@
 	
 	
 	
-	<test name="SOLICITAR_VIAJE_REDONDO_SMOKE">
+	<!-- <test name="SOLICITAR_VIAJE_REDONDO_SMOKE">
 		<classes>
 			<class name="com.praxis.bisnet.test.smoke.ViajesEmpleadoSmokeTest">
 				<methods>
@@ -324,6 +324,6 @@
 				</methods>
 			</class>
 		</classes>
-	</test>
+	</test> -->
 	
 </suite>
